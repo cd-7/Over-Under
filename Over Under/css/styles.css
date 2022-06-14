@@ -1,0 +1,102 @@
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+body {
+  background: rgb(133, 14, 14);
+}
+
+.greeting {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.game__container {
+  width: 25vw;
+  border: 1px solid white;
+  margin: auto;
+  display: grid;
+}
+
+.grid {
+  display: grid;
+}
+
+.dice__grid {
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: center;
+  width: 300px;
+}
+
+.button__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.chips {
+  display: flex;
+  color: white;
+  margin: auto;
+  font-size: 2rem;
+}
+
+#player_chips {
+  margin-left: 5px;
+}
+
+.dice {
+  width: 112px;
+  height: 112px;
+  margin: 15px;
+  justify-self: center;
+  align-self: center;
+}
+
+#dice1,
+#dice2 {
+  transition: 2s;
+}
+
+.bet__button {
+  height: 70px;
+  width: 75px;
+  border: 4px solid black;
+  border-radius: 15px;
+  background: white;
+  font-size: 2rem;
+  margin: 15px;
+  justify-self: center;
+  align-self: center;
+}
+
+.bet__button:hover {
+  background: rgb(151, 9, 37);
+  color: white;
+  transform: scale(1.05);
+}
+
+.bet__container {
+  justify-self: center;
+  margin: 10px 0;
+  display: grid;
+  color: white;
+  font-size: 2rem;
+}
+
+#player_bet {
+  margin-left: 5px;
+}
+
+#warning_label {
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.bet__input {
+  display: flex;
+  justify-content: center;
+}
